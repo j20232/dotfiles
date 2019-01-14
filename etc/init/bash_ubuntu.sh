@@ -12,6 +12,13 @@ sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-ce
 # tmux
 ln -s $HOME/dotfiles/.tmux.conf $HOME/
 
+# pyenv
+sudo git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.profile
+source ~/.profile
+
 # fish
 sudo apt install fish -y
 sudo mkdir $XDG_CONFIG_HOME/fish
