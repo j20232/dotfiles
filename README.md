@@ -8,8 +8,9 @@
 sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 ```
 
+## OSX
 
-## はじめに
+### はじめに
 とりあえず以下を落とす
 - [XCode](https://developer.apple.com/jp/xcode/)
 - [iTerm2](https://www.iterm2.com)
@@ -26,7 +27,7 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
 - [LINE](https://itunes.apple.com/jp/app/line/id443904275?mt=8)
 - [TouchSwitcher](https://hazeover.com/touchswitcher.html)
 
-## iTerm2
+### iTerm2
 - [homebrew](https://brew.sh/index_ja)を落とす
 ```bash
  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -67,7 +68,7 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
  $ fisher add 0rax/fish-bd
 ```
 
-## git
+### git
 https://qiita.com/wnoguchi/items/f7358a227dfe2640cce3
 ```fish
  $ git config --global user.name "First-name Family-name"
@@ -81,7 +82,7 @@ https://qiita.com/wnoguchi/items/f7358a227dfe2640cce3
  $ git config --list
 ```
 
-## pyenv anaconda
+### pyenv anaconda
 http://nihaoshijie.hatenadiary.jp/entry/2017/11/02/180351  
 https://qiita.com/koooooo/items/b21d87ffe2b56d0c589b  
 https://qiita.com/Gsann/items/8bf8da17841fd7d70307  
@@ -96,7 +97,7 @@ https://qiita.com/koooooo/items/b21d87ffe2b56d0c589b
  $ pip install --upgrade pip
 ```
 
-## vim
+### vim
 
 ```fish
  $ brew install python3
@@ -109,7 +110,7 @@ https://qiita.com/koooooo/items/b21d87ffe2b56d0c589b
  $ git config --global core.editor 'nvim -c'
 ```
 
-## lightgbm
+### lightgbm
 python setup.py経由かpip経由かでインストール手順が変わるので注意
 
 https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html
@@ -132,5 +133,5 @@ https://github.com/Microsoft/LightGBM/blob/master/python-package/README.rst#buil
  $ make -j4
 ```
 
-## 参考
+### 参考
 - https://wiki.archlinux.org/index.php/XDG_Base_Directory
