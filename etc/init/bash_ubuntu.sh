@@ -14,5 +14,5 @@ ln -s $HOME/dotfiles/.tmux.conf $HOME/
 
 # fish
 sudo apt install fish -y
-ln -s $HOME/dotfiles/fish $(XDG_CONFIG_HOME)/
+ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
 sudo chsh $USER -s $(which fish)

@@ -4,6 +4,16 @@ XDG_CONFIG_HOME=$HOME/.config
 XDG_CACHE_HOME=$HOME/.cache
 XDG_DATA_HOME=$HOME/.local/share
 
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fisher add hauleth/agnoster
+fisher add plugin-expand
+fisher add oh-my-fish/plugin-extract
+git clone https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+fisher add jethrokuan/fzf
+fisher add jethrokuan/z
+fisher add 0rax/fish-bd
+
 git clone https://github.com/yyuu/pyenv.git $XDG_DATA_HOME/.pyenv
 sudo apt install -y make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
 source $XDG_CONFIG_HOME/fish/config.fish
