@@ -3,9 +3,10 @@
 個人用設定
 
 ## Ubuntu
-'''
+
+```
 sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
-'''
+```
 
 
 ## はじめに
