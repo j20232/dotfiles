@@ -20,4 +20,4 @@ yes | sudo apt-get install fish
 sudo mkdir $XDG_CONFIG_HOME/fish
 sudo ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
 sudo chown $USER -R $HOME
-sudo chsh $USER -s $(which fish)
+sudo chsh $USER -s $(which tmux)
