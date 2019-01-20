@@ -19,11 +19,11 @@ source $XDG_CONFIG_HOME/fish/config.fish
 pyenv install 3.6.6
 pyenv global 3.6.6
 sudo apt install python-pip -y
-sudo update-locale LC_ALL=en_US.UTF-8
 
 ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
+eval (pyenv init - | source)
 yes | sudo apt install neovim
 pip install neovim flake8
 pip install jupyter jupyter_contrib_nbextensions jupyterthemes
@@ -35,4 +35,3 @@ pip install "dask[complete]"
 # read EMAIL
 # ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -b 4096 -C $EMAIL
 # chmod 600 $HOME/.ssh/id_rsa
-eval (pyenv init - | source)
