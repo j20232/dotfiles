@@ -18,5 +18,6 @@ set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
-eval (pyenv init - | source)
-if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end
+if test -e $XDG_CONFIG_HOME/local.fish
+  source $XDG_CONFIG_HOME/local.fish
+end
