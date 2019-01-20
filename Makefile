@@ -8,3 +8,4 @@ deploy:
 init:
 	@bash etc/init/bash_init.sh
 	@fish etc/init/fish_init.sh
+	@fish etc/init/fisher.sh
