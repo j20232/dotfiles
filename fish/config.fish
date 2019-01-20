@@ -22,11 +22,12 @@ if not test -e $HOME/.tmux.conf
   ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 end
 
-if not test -e $XDG_CONFIG_HOME/fish/config.fish
+
+if not test -e $HOME/.config/fish/config.fish
   ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
 end
 
-if not test -d #XDG_CONFIG_HOME/nvim
+if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
 
