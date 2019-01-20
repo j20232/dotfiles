@@ -1,4 +1,8 @@
 # OSX
+bind -T copy-mode-vi v send -X begin-selection
+bind -T copy-mode-vi V send -X select-line
+bind -T copy-mode-vi C-v send -X rectangle-toggle
+bind -T copy-mode-vi Y send -X copy-line
 bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
 bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
 
