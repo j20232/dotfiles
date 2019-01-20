@@ -28,6 +28,10 @@ if not test -e $HOME/.config/fish/config.fish
   ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
 end
 
+if not test -e $HOME/.config/flake8
+  ln -s $HOME/dotfiles/flake8 $XDG_CONFIG_HOME/
+end
+
 if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
