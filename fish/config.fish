@@ -18,7 +18,6 @@ set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
-if test -e '$XDG_CONFIG_HOME/local.fish'
-  echo "hogehoge"
+if test -e $XDG_CONFIG_HOME/local.fish
   source $XDG_CONFIG_HOME/local.fish
 end
