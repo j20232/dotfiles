@@ -11,7 +11,7 @@ sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-ce
 sudo update-locale LC_ALL=en_US.UTF-8
 
 # tmux
-ln -s $HOME/dotfiles/.tmux.conf $HOME/
+ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 
 # fish
 yes | sudo apt-add-repository ppa:fish-shell/release-2

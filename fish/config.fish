@@ -19,7 +19,7 @@ set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
 if not test -e $HOME/.tmux.conf
-  ln -s $HOME/dotfiles/.tmux.conf $HOME/
+  ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 end
 
 if not test -e $XDG_CONFIG_HOME/fish/config.fish

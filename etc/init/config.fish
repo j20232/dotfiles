@@ -1,1 +1,0 @@
-/Users/berry/dotfiles/fish/config.fish
