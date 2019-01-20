@@ -11,8 +11,9 @@ sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-ce
 sudo update-locale LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
-locale-gen --purge $LANG
-dpkg-reconfigure -f noninteractive locales && /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
+sudo locale-gen --purge $LANG
+sudo dpkg-reconfigure -f noninteractive locales
+sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
 # tmux
 ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
