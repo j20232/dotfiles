@@ -10,5 +10,4 @@ source $XDG_CONFIG_HOME/fish/config.fish
 pyenv install 3.6.6
 pyenv global 3.6.6
 sudo apt install python-pip -y
-ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 
