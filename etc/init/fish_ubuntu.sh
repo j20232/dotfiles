@@ -24,7 +24,7 @@ sudo apt install python-pip -y
 ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
-sudo apt install -y neovim
+yes | sudo apt install neovim
 pip install neovim flake8
 pip install jupyter jupyter_contrib_nbextensions jupyterthemes
 pip install kaggle

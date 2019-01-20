@@ -19,4 +19,5 @@ sudo apt-get update
 yes | sudo apt-get install fish
 sudo mkdir $XDG_CONFIG_HOME/fish
 sudo ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
+sudo chown user:usergroup -R $USER
 sudo chsh $USER -s $(which fish)
