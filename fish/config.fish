@@ -10,6 +10,7 @@ end
 alias gcm="git commit -m"
 alias gb="git branch"
 alias gpom="git push origin master"
+alias :q="exit"
 
 set XDG_CONFIG_HOME $HOME/.config $XDG_CONFIG_HOME
 set XDG_CACHE_HOME $HOME/.cache $XDG_CACHE_HOME
