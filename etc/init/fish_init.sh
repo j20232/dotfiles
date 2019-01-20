@@ -3,11 +3,8 @@
 # init
 source $XDG_CONFIG_HOME/fish/config.fish
 
-# error handling
-set -eu
-
 # by OS
-switch(uname)
+switch (uname)
   case Darwin
     echo "Running on OSX"
   case Linux
@@ -54,6 +51,4 @@ switch(uname)
       echo "Unknown distribution"
       distri_name="unknown"
     end
-  end
-
-                 
+  end 
