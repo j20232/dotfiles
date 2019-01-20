@@ -1,0 +1,3 @@
+# Linux
+set-option -g default-shell "/usr/bin/fish"
+set -g default-command "/usr/bin/fish"
