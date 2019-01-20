@@ -15,7 +15,6 @@ ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 yes | sudo apt install neovim
-eval (pyenv init - | source)
 pip install neovim flake8
 pip install jupyter jupyter_contrib_nbextensions jupyterthemes
 pip install kaggle
@@ -23,18 +22,8 @@ pip install numpy pandas matplotlib seaborn scikit-learn lightgbm joblib pathlib
 pip install "dask[complete]"
 
 eval (pyenv init - | source)
-# echo "give me e-mail"
-# read EMAIL
-# ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -b 4096 -C $EMAIL
-# chmod 600 $HOME/.ssh/id_rsa
 
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fisher add hauleth/agnoster
-fisher add oh-my-fish/plugin-extract
-git clone https://github.com/junegunn/fzf.git ~/.fzf
-yes | ~/.fzf/install
-fisher add jethrokuan/fzf
-fisher add jethrokuan/z
-fisher add 0rax/fish-bd
-
-eval (pyenv init - | source)
+echo "give me e-mail"
+read EMAIL
+ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -b 4096 -C $EMAIL
+chmod 600 $HOME/.ssh/id_rsa
