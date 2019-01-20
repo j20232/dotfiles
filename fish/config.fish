@@ -18,6 +18,18 @@ set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
+if not test -e $HOME/.tmux.conf
+  ln -s $HOME/dotfiles/.tmux.conf $HOME/
+end
+
+if not test -e $XDG_CONFIG_HOME/fish/config.fish
+  ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
+end
+
+if not test -d #XDG_CONFIG_HOME/nvim
+  ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
+end
+
 if test -e $XDG_CONFIG_HOME/local.fish
   source $XDG_CONFIG_HOME/local.fish
 end
