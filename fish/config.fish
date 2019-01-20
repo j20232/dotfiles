@@ -19,6 +19,4 @@ set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
 eval (pyenv init - | source)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/berry/google-cloud-sdk/path.fish.inc' ]; . '/Users/berry/google-cloud-sdk/path.fish.inc'; end
+if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end
