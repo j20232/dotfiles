@@ -9,6 +9,10 @@ mkdir -p $XDG_CONFIG_HOME $XDG_CACHE_HOME $XDG_DATA_HOME
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-certificates software-properties-common
 sudo update-locale LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=$LANG
+locale-gen --purge $LANG
+dpkg-reconfigure -f noninteractive locales && /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
 # tmux
 ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
