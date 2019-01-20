@@ -23,7 +23,6 @@ sudo apt install python-pip -y
 ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
-eval (pyenv init - | source)
 yes | sudo apt install neovim
 pip install neovim flake8
 pip install jupyter jupyter_contrib_nbextensions jupyterthemes
@@ -31,6 +30,7 @@ pip install kaggle
 pip install numpy pandas matplotlib seaborn scikit-learn lightgbm joblib pathlib numba fasteners
 pip install "dask[complete]"
 
+eval (pyenv init - | source)
 # echo "give me e-mail"
 # read EMAIL
 # ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -b 4096 -C $EMAIL
