@@ -10,4 +10,3 @@ init:
 	@fish etc/init/fish_init.sh
 	@fish sh/fisher.sh
 	@fish sh/pip.sh
-	@bash sh/ssh.sh
