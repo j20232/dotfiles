@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# init
-source $XDG_CONFIG_HOME/fish/config.fish
-
 # by OS
 switch (uname)
   case Darwin
