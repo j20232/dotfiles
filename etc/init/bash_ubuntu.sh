@@ -18,5 +18,3 @@ sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
 # fish
 yes | sudo apt-add-repository ppa:fish-shell/release-2
-# sudo apt install -y fish
-# sudo chsh $USER -s $(which fish)
