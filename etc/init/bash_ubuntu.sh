@@ -1,6 +1,5 @@
-# XDG Base Directory
-# https://wiki.archlinux.org/index.php/XDG_Base_Directory
 echo "Setting up XDG Base Directory..."
+echo "Detail of XDG Base Directory is here: https://wiki.archlinux.org/index.php/XDG_Base_Directory"
 XDG_CONFIG_HOME=$HOME/.config
 XDG_CACHE_HOME=$HOME/.cache
 XDG_DATA_HOME=$HOME/.local/share
