@@ -1,3 +1,4 @@
+source $XDG_CONFIG_HOME/fish/config.fish
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 yes | sudo apt install neovim
