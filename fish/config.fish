@@ -40,5 +40,5 @@ if test -e $XDG_CONFIG_HOME/local.fish
   source $XDG_CONFIG_HOME/local.fish
 end
 
-# source $HOME/dotfiles/fish/pyenv.sh
+source $HOME/dotfiles/fish/pyenv.sh
 
