@@ -16,11 +16,7 @@ sudo locale-gen --purge $LANG
 sudo dpkg-reconfigure -f noninteractive locales
 sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
-# tmux
-ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
-
 # fish
 yes | sudo apt-add-repository ppa:fish-shell/release-2
-sudo apt-get update
-sudo apt-get install fish
+sudo apt install fish
 sudo chsh $USER -s $(which fish)
