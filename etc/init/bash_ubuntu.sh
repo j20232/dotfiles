@@ -18,7 +18,6 @@ sudo locale-gen --purge $LANG
 sudo dpkg-reconfigure -f noninteractive locales
 sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
-# fish
 echo "Install fish..."
 yes | sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
