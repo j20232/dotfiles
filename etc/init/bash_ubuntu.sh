@@ -19,8 +19,8 @@ sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 
 # fish
-yes | sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-yes | sudo apt-get install fish
+sudo apt-get install -y fish
 sudo chown $USER -R $HOME
 sudo chsh $USER -s $(which fish)
