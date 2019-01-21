@@ -21,7 +21,7 @@ ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 # fish
 yes | sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
-yes | sudo apt-get install fish
+# yes | sudo apt-get install fish
 # sudo mkdir $XDG_CONFIG_HOME/fish
 # sudo chown $USER -R $HOME
 # sudo chsh $USER -s $(which fish)
