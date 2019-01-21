@@ -7,7 +7,5 @@ deploy:
 
 init:
 	@bash etc/init/bash_init.sh
-	@bash sudo apt install -y fish
-	@bash sudo chsh $USER -s $(which fish)
-	@fish etc/init/fish_init.sh
+	# @fish etc/init/fish_init.sh
 
