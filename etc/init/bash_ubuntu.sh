@@ -17,9 +17,6 @@ sudo dpkg-reconfigure -f noninteractive locales
 sudo /usr/sbin/update-locale LANG=$LANG LC_ALL=$LANG
 
 # fish
-echo "1"
 yes | sudo apt-add-repository ppa:fish-shell/release-2
-echo "2"
 sudo apt install -y fish
-echo "3"
-sudo chsh $USER -s $(which fish)
+# sudo chsh $USER -s $(which fish)
