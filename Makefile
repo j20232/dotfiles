@@ -7,7 +7,7 @@ deploy:
 
 init:
 	@bash etc/init/bash_init.sh
-	@bash sh/ssh.sh
 	@fish etc/init/fish_init.sh
 	@fish sh/fisher.sh
 	@fish sh/pip.sh
+	@bash sh/ssh.sh
