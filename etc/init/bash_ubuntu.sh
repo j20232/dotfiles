@@ -8,7 +8,7 @@ mkdir -p $XDG_CONFIG_HOME $XDG_CACHE_HOME $XDG_DATA_HOME
 
 echo "Installing minimum packages..."
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-certificates software-properties-common
+sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-certificates software-properties-common unzip
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Setting up the locale..."
