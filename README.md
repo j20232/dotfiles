@@ -133,5 +133,11 @@ https://github.com/Microsoft/LightGBM/blob/master/python-package/README.rst#buil
  $ make -j4
 ```
 
+## その他
+
+- kaggle.jsonをローカルと共有する
+- Port forwardingしてjupyter繋ぐ
+
+
 ### 参考
 - https://wiki.archlinux.org/index.php/XDG_Base_Directory

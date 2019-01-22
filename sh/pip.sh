@@ -7,3 +7,4 @@ pip install jupyter jupyter_contrib_nbextensions jupyterthemes
 pip install kaggle
 pip install numpy pandas matplotlib seaborn scikit-learn lightgbm joblib pathlib numba fasteners
 pip install "dask[complete]"
+jupyter contrib nbextension install --user
