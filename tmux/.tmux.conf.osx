@@ -8,3 +8,10 @@ bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
 
 set-option -g default-shell "/usr/local/bin/fish"
 set -g default-command "/usr/local/bin/fish"
+
+# Battery
+set -g @plugin 'tmux-plugins/tmux-battery'
+set-option -g status-right '#{battery --tmux} [%Y-%m-%d(%a) %H:%M]'
+set-option -g status-interval 1
+set-option -g status-justify centre
+set-option -g base-index 1
