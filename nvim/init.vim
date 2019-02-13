@@ -7,7 +7,7 @@ set hidden
 set backspace=indent,eol,start
 set showcmd
 set belloff=all
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Looking
 set number
