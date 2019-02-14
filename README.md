@@ -22,6 +22,12 @@ $XDG_CONFIG_HOME/fish/config.fishに以下を追加
 set PATH /usr/local/cuda/bin $PATH
 set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 ```
+### cuDNN
+
+```
+cd $HOME/dotfiles/sh
+./cudnn.sh
+```
 
 ## OSX
 
