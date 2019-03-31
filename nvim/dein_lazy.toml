@@ -58,3 +58,15 @@ hook_add = '''
 	nnoremap <silent> <C-k> <Plug>(ale_previous_wrap)
 	nnoremap <silent> <C-j> <Plug>(ale_next_wrap)
 '''
+
+[[plugins]] # JavaScript
+repo = 'billyvg/tigris.nvim'
+on_ft = ['javascript', 'javascript.jsx']
+host_post_update='''
+  let g:dein#plugin.build = './install.sh'
+'''
+host_add='''
+  let g:tigris#enabled = 1
+  let g:tigris#on_the_fly_enabled = 1
+  let g:tigris#delay = 1
+'''
