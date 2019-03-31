@@ -1,3 +1,12 @@
 # Linux
+bind -T copy-mode-vi v send -X begin-selection
+bind -T copy-mode-vi V send -X select-line
+bind -T copy-mode-vi C-v send -X copy-selection
+bind -T copy-mode-vi Y send -X copy-line
+bind-key C-p paste-buffer
+bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xsel -ip && xsel -op | xsel -ib"
+bind-key -T copy-mode-vi Enter send -X copy-pipe-and-cancel "xsel -ip && xsel -op | xsel -ib"
+
 set-option -g default-shell "/usr/bin/fish"
 set -g default-command "/usr/bin/fish"
+

@@ -21,6 +21,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'w0ng/vim-hybrid'
+hook_add = '''
+  set background=dark
+'''
+
+[[plugins]]
 repo = 'roxma/nvim-yarp'
 
 [[plugins]]
