@@ -61,6 +61,8 @@ nnoremap 2 <C-w>-
 nnoremap 3 <C-w>>
 nnoremap 4 <C-w><
 
+nmap <silent> <buffer> gK <Plug>(kite-docs)
+
 " Tab
 nnoremap st :<C-u>tabnew<CR>
 nnoremap sn gt
