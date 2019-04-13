@@ -61,12 +61,6 @@ nnoremap 2 <C-w>-
 nnoremap 3 <C-w>>
 nnoremap 4 <C-w><
 
-
-" Kite
-nmap <silent> <buffer> gK <Plug>(kite-docs)
-set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
-set laststatus=2  " always display the status line
-
 " Tab
 nnoremap st :<C-u>tabnew<CR>
 nnoremap sn gt
