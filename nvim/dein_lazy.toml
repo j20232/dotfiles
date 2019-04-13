@@ -59,6 +59,17 @@ hook_add = '''
 	nnoremap <silent> <C-j> <Plug>(ale_next_wrap)
 '''
 
+[[plugins]]
+repo = 'zchee/deoplete-clang'
+on_ft = ['c', 'cpp', 'cmake']
+hook_source = '''
+    let g:deoplete#sources#clang#libclang_path = system("llvm-config --prefix")[:-2] . '/lib/libclang.dylib'
+    let g:deoplete#sources#clang#clang_header = system("llvm-config --prefix")[:-2] . '/lib/clang'
+    let g:deoplete#sources#clang#sort_algo = 'priority'
+    let g:deoplete#sources#clang#clang_complete_database="./build/"
+'''
+depends = ['deoplete.nvim']
+
 [[plugins]] # JavaScript
 repo = 'billyvg/tigris.nvim'
 on_ft = ['javascript', 'javascript.jsx']
