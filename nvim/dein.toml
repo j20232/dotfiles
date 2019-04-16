@@ -1,10 +1,30 @@
+# Default
+
+## Plugin manager
+## https://github.com/Shougo/dein.vim
 [[plugins]]
 repo = 'Shougo/dein.vim'
-
+## Asynchronous execution for vim
+## https://github.com/Shougo/vimproc.vim
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
 
+## Remote plugin framework without ":UpdateRemotePlugins"
+## https://github.com/roxma/nvim-yarp
+[[plugins]]
+repo = 'roxma/nvim-yarp'
 
+## neovim rpc client working on vim8 dependent on nvim-yarp
+## https://github.com/roxma/vim-hug-neovim-rpc
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+
+#------------------------------------------------------------------- 
+
+# View
+
+## Statusline/tabline
+## https://github.com/itchyny/lightline.vim
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
@@ -20,27 +40,20 @@ hook_add = '''
 		\}
 '''
 
+## Color scheme
+## https://github.com/w0ng/vim-hybrid
 [[plugins]]
 repo = 'w0ng/vim-hybrid'
 hook_add = '''
   set background=dark
 '''
 
-[[plugins]]
-repo = 'roxma/nvim-yarp'
+#------------------------------------------------------------------- 
 
-[[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
+# Utility
 
-[[plugins]]
-repo = 'Shougo/neco-vim'
-
-[[plugins]]
-repo = 'Shougo/neco-syntax'
-
-[[plugins]]
-repo = 'ujihisa/neco-look'
-
+## File system explorer
+## ttps://github.com/scrooloose/nerdtree
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
@@ -48,6 +61,22 @@ hook_add = '''
   nnoremap <silent><C-e> :NERDTreeToggle<CR>
 '''
 
+#------------------------------------------------------------------- 
+
+# Completion
+
+## User inputs
+## https://github.com/Shougo/neco-syntax
+[[plugins]]
+repo = 'Shougo/neco-syntax'
+
+## English
+## https://github.com/ujihisa/neco-look
+[[plugins]]
+repo = 'ujihisa/neco-look'
+
+## Extensible and asynchronous completion framework
+## https://github.com/Shougo/deoplete.nvim
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 depends = 'context_filetype.vim'
@@ -91,3 +120,4 @@ hook_add = '''
     let g:deoplete#enable_at_startup = 1
     set completeopt-=preview
 '''
+
