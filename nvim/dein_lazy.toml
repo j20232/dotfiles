@@ -126,15 +126,3 @@ host_add='''
   let g:tigris#on_the_fly_enabled = 1
   let g:tigris#delay = 1
 '''
-
-## Go
-## Go language support
-## https://github.com/fatih/vim-go
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = ['go']
-host_add='''
-  let g:go_highlight_functions = 1
-  let g:go_highlight_methods = 1
-  let g:go_highlight_structs = 1
-'''

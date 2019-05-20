@@ -56,10 +56,6 @@ nnoremap sr <C-w>r
 nnoremap so <C-w>_<C-w>|
 nnoremap s= <C-w>=
 nnoremap sO <C-w>=
-nnoremap 1 <C-w>+
-nnoremap 2 <C-w>-
-nnoremap 3 <C-w>>
-nnoremap 4 <C-w><
 
 " Tab
 nnoremap st :<C-u>tabnew<CR>
