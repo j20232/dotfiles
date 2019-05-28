@@ -9,6 +9,6 @@ echo "Setting up pyenv..."
 sudo apt install -y make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 source $XDG_CONFIG_HOME/fish/config.fish
-pyenv install 3.6.6
-pyenv global 3.6.6
+pyenv install anaconda3-5.3.1
+pyenv global anaconda3-5.3.1
 sudo apt install python-pip -y
