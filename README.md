@@ -29,6 +29,15 @@ cd $HOME/dotfiles/sh
 ./cudnn.sh
 ```
 
+### Desktop
+
+これでいいっぽい
+
+```
+$ ubuntu-drivers devices
+$ sudo ubuntu-drivers autoinstall
+```
+
 ## OSX
 
 ### はじめに
