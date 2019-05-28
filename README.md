@@ -29,7 +29,7 @@ cd $HOME/dotfiles/sh
 ./cudnn.sh
 ```
 
-### Desktop
+### Desktop (cudaは入らない)
 
 これでいいっぽい
 
