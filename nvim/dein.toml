@@ -1,5 +1,4 @@
 # Default
-
 ## Plugin manager
 ## https://github.com/Shougo/dein.vim
 [[plugins]]
@@ -59,6 +58,14 @@ repo = 'scrooloose/nerdtree'
 hook_add = '''
   let NERDTreeShowHidden=1
   nnoremap <silent><C-e> :NERDTreeToggle<CR>
+'''
+
+## Windows resizer
+## https://github.com/simeji/winresizer
+[[plugins]]
+repo = 'simeji/winresizer'
+hook_add = '''
+  let g:winresizer_start_key = '<C-b>'
 '''
 
 ## Source code browser

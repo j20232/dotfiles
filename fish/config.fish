@@ -22,6 +22,7 @@ set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
+
 if not test -e $HOME/.tmux.conf
   ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
 end
