@@ -11,7 +11,6 @@ alias gcm="git commit -m"
 alias gb="git branch"
 alias gpom="git push origin master"
 alias G="git log --oneline --graph --no-merges | head"
-alias cat="ccat"
 alias :q="exit"
 
 set XDG_CONFIG_HOME $HOME/.config $XDG_CONFIG_HOME
@@ -44,3 +43,8 @@ if test -e $XDG_CONFIG_HOME/local.fish
 end
 
 source $HOME/dotfiles/fish/pyenv.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/mocobt/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/home/mocobt/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+thefuck --alias | source
