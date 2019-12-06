@@ -1,4 +1,12 @@
 # OSX
+## Status Bar
+set-option -g status-left-length 90
+set-option -g status-right-length 90
+# set -g status-style fg=white bg=black
+
+## Pane Border
+# set -g message-style fg=white, bg=black, bright
+
 bind -T copy-mode-vi v send -X begin-selection
 bind -T copy-mode-vi V send -X select-line
 bind -T copy-mode-vi C-v send -X rectangle-toggle
