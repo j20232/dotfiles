@@ -49,4 +49,3 @@ source $HOME/dotfiles/fish/pyenv.sh
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/mocobt/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/home/mocobt/Downloads/google-cloud-sdk/path.fish.inc'; end
 
-thefuck --alias | source
