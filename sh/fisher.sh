@@ -6,4 +6,4 @@ yes | ~/.fzf/install
 fisher add jethrokuan/fzf
 fisher add jethrokuan/z
 fisher add 0rax/fish-bd
-
+fisher add edc/bass
