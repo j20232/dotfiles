@@ -21,6 +21,7 @@ set PATH $HOME/.cargo/bin $PATH
 set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
+set -x PIPENV_SKIP_LOCK true
 
 
 if not test -e $HOME/.tmux.conf
