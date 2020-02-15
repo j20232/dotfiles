@@ -6,7 +6,7 @@ set -eu
 case ${OSTYPE} in
     darwin*)
         echo "Running on OSX"
-        source /init/general/bash_darwin.sh
+        source /init/bash/bash_darwin.sh
         ;;
     linux*)
         if   [ -e /etc/debian_version ] ||
@@ -16,7 +16,7 @@ case ${OSTYPE} in
                 # Ubuntu
                 # distri_name="ubuntu"
                 echo "Running on ubuntu"
-                source /init/general/bash_ubuntu.sh
+                source /init/bash/bash_ubuntu.sh
             else
                 # Debian
                 distri_name="debian"

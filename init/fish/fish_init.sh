@@ -4,7 +4,7 @@
 switch (uname)
   case Darwin
     echo "Running on OSX"
-    source /init/general/fish_darwin.sh
+    source /init/fish/fish_darwin.sh
   case Linux
     echo "Running on Linux"
     if test -e /etc/debian_version; or test -e /etc/debian_release
@@ -12,7 +12,7 @@ switch (uname)
       if test -e /etc/lsb-release
         # Ubuntu
         echo "Running on Ubuntu"
-        source /init/general/fish_ubuntu.sh
+        source /init/fish/fish_ubuntu.sh
       else
         # Debian
         distri_name="debian"

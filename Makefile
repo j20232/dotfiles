@@ -6,9 +6,9 @@ deploy:
 	ln -s $(HOME)/dotfiles/nvim $(XDG_CONFIG_HOME)/
 
 init:
-	@bash init/general/bash_init.sh
-	@fish init/general/fish_init.sh
-	@fish init/general/fisher.sh
+	@bash init/bash/bash_init.sh
+	@fish init/fish/fish_init.sh
+	@fish init/fish/fisher.sh
 	@fish init/python/pip.sh
 
 table:
