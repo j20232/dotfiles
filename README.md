@@ -11,7 +11,7 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
 
 ```
 cd $HOME/dotfiles/sh
-./cuda.sh
+sudo sh ./cuda.sh
 ```
 その後
 ```
