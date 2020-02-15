@@ -44,6 +44,12 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 make gui
 ```
 
+## ssh
+
+```
+make ssh
+```
+
 ## git 🐙
 
 ```fish
@@ -57,3 +63,4 @@ make gui
  $ git config --global core.quotepath false
  $ git config --list
 ```
+

@@ -25,3 +25,6 @@ nn:
 
 gui:
 	@fish init/gui/init.sh
+
+ssh:
+	@fish init/etc/ssh.sh 
