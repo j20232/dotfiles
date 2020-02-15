@@ -44,7 +44,7 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 make gui
 ```
 
-## ssh
+## ssh 🌐
 
 ```
 make ssh
