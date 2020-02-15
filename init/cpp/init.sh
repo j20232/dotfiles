@@ -1,18 +1,12 @@
-#!/bin/bash
-
-# by OS
-switch (uname)
+switch(uname)
   case Darwin
-    echo "Running on OSX"
-    source /init/fish/fish_darwin.sh
+    source /init/cpp/osx.sh
   case Linux
-    echo "Running on Linux"
     if test -e /etc/debian_version; or test -e /etc/debian_release
       # Check Ubuntu or Debian
       if test -e /etc/lsb-release
         # Ubuntu
-        echo "Running on Ubuntu"
-        source /init/fish/fish_ubuntu.sh
+        source /init/cpp/ubuntu.sh
       else
         # Debian
         distri_name="debian"

@@ -1,18 +1,13 @@
-deploy:
-	@apt update
-	@apt upgrade -y
-	ln -s $(HOME)/dotfiles/.tmux.conf $(HOME)/
-	ln -s $(HOME)/dotfiles/fish $(XDG_CONFIG_HOME)/
-	ln -s $(HOME)/dotfiles/nvim $(XDG_CONFIG_HOME)/
-
 init:
-	@bash init/bash/bash_init.sh
-	@fish init/fish/fish_init.sh
-	@fish init/fish/fisher.sh
-	@fish init/python/pip.sh
+	@bash init/sh/bash_init.sh
+	@fish init/sh/fish_init.sh
+	@fish init/python/init.sh
 
-table:
-	@fish init/python/table.sh
+gui:
+	@fish init/gui/init.sh
+
+ssh:
+	@fish init/etc/ssh.sh 
 
 cuda:
 	@fish init/cuda/cuda.sh
@@ -20,11 +15,19 @@ cuda:
 cudnn:
 	@fish init/cuda/cudnn.sh
 
+# Python
+table:
+	@fish init/pip/default.sh
+	@fish init/pip/table.sh
+
 nn:
-	@fish init/python/nn.sh
+	@fish init/pip/default.sh
+	@fish init/pip/nn.sh
 
-gui:
-	@fish init/gui/init.sh
+pyutil:
+	@fish init/pip/optional.sh
 
-ssh:
-	@fish init/etc/ssh.sh 
+# C++
+cpp:
+	@fish init/cpp/init.sh
+

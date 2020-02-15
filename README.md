@@ -6,21 +6,10 @@
 sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 ```
 
-### table 🏓
-
-```
-make table
-```
 
 ### CUDA & cuDNN🔥
 
-```
-make cuda && sudo reboot
-```
-
-```
-make cudnn && make nn
-```
+`make cuda && sudo reboot` -> `make cudnn`
 
 ---
 
@@ -30,25 +19,26 @@ make cudnn && make nn
 git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 ```
 
-### Touch Bar 📲
-- [TouchSwitcher](https://hazeover.com/touchswitcher.html)
-
-### iTerm2 🖥
-- Preferences->Text->Font->Change Font: select "Ricty Discord Regular for Powerline"
+- Touch Bar: [TouchSwitcher](https://hazeover.com/touchswitcher.html)
+- iTerm2: Preferences->Text->Font->Change Font: select "Ricty Discord Regular for Powerline"
 
 ---
 
-## GUI 🎚
+## Python
 
-```
-make gui
-```
+- table: `make table`
+- NN: `make nn`
+- util: `make pyutil`
 
-## ssh
+## C++
+- `make cpp`
 
-```
-make ssh
-```
+---
+
+## Others 🎚
+
+- GUI: `make gui`
+- ssh: `make ssh`
 
 ## git 🐙
 
