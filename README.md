@@ -1,18 +1,18 @@
-# dotfiles
+# dotfiles 🐱
 
-## Ubuntu
+## Ubuntu 🏮
 
 ```
 sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 ```
 
-### table
+### table 🏓
 
 ```
 make table
 ```
 
-### CUDA & cuDNN
+### CUDA & cuDNN🔥
 
 ```
 make cuda && sudo reboot
@@ -24,27 +24,27 @@ make cudnn && make nn
 
 ---
 
-## OSX
+## OSX 🍎
 
 ```
 git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 ```
 
-### Touch Bar
+### Touch Bar 📲
 - [TouchSwitcher](https://hazeover.com/touchswitcher.html)
 
-### iTerm2
+### iTerm2 🖥
 - Preferences->Text->Font->Change Font: select "Ricty Discord Regular for Powerline"
 
 ---
 
-## GUI
+## GUI 🎚
 
 ```
 make gui
 ```
 
-## git
+## git 🐙
 
 ```fish
  $ git config --global user.name "First-name Family-name"
