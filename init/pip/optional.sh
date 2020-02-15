@@ -1,4 +1,5 @@
 # mlflow
+pip install tensorboard
 pip install mlflow
 
 # jupyter
