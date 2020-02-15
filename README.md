@@ -26,9 +26,10 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 
 ## Python 🐍
 
-- table: `make table`
-- NN: `make nn`
-- util: `make pyutil`
+- all: `make py`
+- only table: `make table`
+- only NN: `make nn`
+- only util: `make pyutil`
 
 ## C++ 🐶
 - `make cpp`

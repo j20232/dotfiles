@@ -3,12 +3,7 @@ init:
 	@fish init/sh/fish_init.sh
 	@fish init/python/init.sh
 
-gui:
-	@fish init/gui/init.sh
-
-ssh:
-	@fish init/etc/ssh.sh 
-
+# CUDA
 cuda:
 	@fish init/cuda/cuda.sh
 
@@ -16,6 +11,12 @@ cudnn:
 	@fish init/cuda/cudnn.sh
 
 # Python
+py:
+	@fish init/pip/default.sh
+	@fish init/pip/table.sh
+	@fish init/pip/nn.sh
+	@fish init/pip/optional.sh
+
 table:
 	@fish init/pip/default.sh
 	@fish init/pip/table.sh
@@ -30,4 +31,11 @@ pyutil:
 # C++
 cpp:
 	@fish init/cpp/init.sh
+
+# Others
+gui:
+	@fish init/gui/init.sh
+
+ssh:
+	@fish init/etc/ssh.sh 
 
