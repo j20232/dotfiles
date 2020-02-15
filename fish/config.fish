@@ -28,6 +28,7 @@ switch (uname)
       ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
       ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
     end
+  end
 
 # CUDA
 switch (uname)
@@ -53,7 +54,6 @@ end
 if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
-
 if test -e $XDG_CONFIG_HOME/local.fish
   source $XDG_CONFIG_HOME/local.fish
 end
