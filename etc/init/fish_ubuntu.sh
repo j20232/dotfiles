@@ -12,3 +12,4 @@ source $XDG_CONFIG_HOME/fish/config.fish
 pyenv install anaconda3-5.3.1
 pyenv global anaconda3-5.3.1
 sudo apt install python-pip -y
+sudo apt install ctags
