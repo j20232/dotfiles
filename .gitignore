@@ -4,3 +4,4 @@ fish/fishd.*
 fishfile
 functions
 *.deb
+*.tgz

@@ -6,6 +6,9 @@ sudo ldconfig
 
 if test -e ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
   rm ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+end
+
+if test -e ./cuda cudnn-9.2-linux-x64-v7.1.tgz
   rm -R -f cuda cudnn-9.2-linux-x64-v7.1.tgz
 end
 
