@@ -3,3 +3,4 @@ fish/conf.d/*
 fish/fishd.*
 fishfile
 functions
+*.deb
