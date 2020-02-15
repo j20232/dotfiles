@@ -4,5 +4,10 @@ sudo cp -a cuda/lib64/* /usr/local/lib/
 sudo cp -a cuda/include/* /usr/local/include/
 sudo ldconfig
 
-rm cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
-rm -R -f cuda cudnn-9.2-linux-x64-v7.1.tgz
+if test -e ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+  rm ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+  rm -R -f cuda cudnn-9.2-linux-x64-v7.1.tgz
+end
+
+echo "Set up cuDNN!"
+

@@ -7,4 +7,9 @@ sudo apt update
 sudo apt install cuda cuda-drivers
 sudo reboot
 
-rm cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+if test -e ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+  rm ./cuda-repo-ubuntu1804_10.1.168-1_amd64.deb
+end
+
+echo "Set up CUDA!"
+
