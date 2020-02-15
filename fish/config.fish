@@ -21,6 +21,11 @@ set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
 switch (uname)
+  case Darwin
+    if not test -e /usr/local/bin/gcc
+      ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
+      ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
+    end
   case Linux
     set PATH /usr/local/cuda/bin $PATH
     set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
