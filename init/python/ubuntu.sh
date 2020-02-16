@@ -1,7 +1,7 @@
 echo "Setting Python on Ubuntu"
 sudo apt install ctags
 sudo apt install -y make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
-sudo apt install wamerican-huge
+yes | sudo apt install wamerican-huge
 yes | sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 yes | sudo apt install neovim
