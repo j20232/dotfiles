@@ -1,17 +1,14 @@
-#!/bin/bash
-
-# by OS
-switch (uname)
+switch(uname)
   case Darwin
-    echo "Running on OSX"
+    echo "Installing GUI applications on OSX"
+    source /init/gui/osx.sh
   case Linux
-    echo "Running on Linux"
     if test -e /etc/debian_version; or test -e /etc/debian_release
       # Check Ubuntu or Debian
       if test -e /etc/lsb-release
         # Ubuntu
-        echo "Running on Ubuntu"
-        source etc/init/fish_ubuntu.sh
+        echo "Installing GUI applications on Ubuntu"
+        source /init/gui/ubuntu.sh
       else
         # Debian
         distri_name="debian"
