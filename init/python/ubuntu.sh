@@ -8,8 +8,8 @@ yes | sudo apt install neovim
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 source $XDG_CONFIG_HOME/fish/config.fish
-pyenv install anaconda3-5.3.1
-pyenv global anaconda3-5.3.1
+pyenv install anaconda3-2019.03
+pyenv global anaconda3-2019.03
 sudo apt install python-pip -y
 
 pip install -U pip
