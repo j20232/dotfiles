@@ -21,6 +21,7 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
 
 - Touch Bar: [TouchSwitcher](https://hazeover.com/touchswitcher.html)
 - iTerm2: Preferences->Text->Font->Change Font: select "Ricty Discord Regular for Powerline"
+- MKL & TBB: https://software.intel.com/en-us/mkl
 
 ---
 
