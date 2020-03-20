@@ -20,22 +20,16 @@ set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
 set PATH /usr/local/bin $PATH
 
-# C++
 switch (uname)
   case Darwin
-    if not test -e /usr/local/bin/gcc
-      ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
-      ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
-    end
-  end
-
-# CUDA
-switch (uname)
+    source $HOME/dotfiles/fish/os/osx.fish
   case Linux
-    set PATH /usr/local/cuda/bin $PATH
-    set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
+    source $HOME/dotfiles/fish/os/ubuntu.fish
   end
 
+if test -e $XDG_CONFIG_HOME/local.fish
+  source $XDG_CONFIG_HOME/local.fish
+end
 
 if not test -e $HOME/.tmux.conf
   ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/
@@ -53,18 +47,5 @@ end
 if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
-if test -e $XDG_CONFIG_HOME/local.fish
-  source $XDG_CONFIG_HOME/local.fish
-end
 
-# pyenv
-switch (uname)
-  case Darwin
-    if test -e /usr/local/bin/pyenv  
-      eval (pyenv init - | source)
-    end
-  case Linux
-    if test -e $HOME/.pyenv/bin/pyenv
-      eval (pyenv init - | source)
-    end
-  end
+
