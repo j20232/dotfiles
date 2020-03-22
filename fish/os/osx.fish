@@ -13,6 +13,7 @@ end
 
 # bgfx
 set BGFX_PATH $HOME/sdk/bgfx.cmake $BGFX_PATH
+set BIGG_PATH $HOME/sdk/bigg $BIGG_PATH
 
 # vcpkg
 set VCPKG_ROOT $HOME/sdk/vcpkg $VCPKG_ROOT
