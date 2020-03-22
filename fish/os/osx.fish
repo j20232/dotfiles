@@ -11,10 +11,6 @@ if test -e /usr/local/bin/pyenv
   eval (pyenv init - | source)
 end
 
-# bgfx
-set BGFX_PATH $HOME/sdk/bgfx.cmake $BGFX_PATH
-set BIGG_PATH $HOME/sdk/bigg $BIGG_PATH
-
 # vcpkg
 set VCPKG_ROOT $HOME/sdk/vcpkg $VCPKG_ROOT
 alias vcpkg="$VCPKG_ROOT/vcpkg"
