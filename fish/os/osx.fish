@@ -37,13 +37,17 @@ if not test -e /usr/local/bin/gcc
   ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
 end
 
+set CC /usr/local/bin/gcc-9 $CC
+set CXX /usr/local/bin/g++-9 $CXX
+
 # llvm
-set CMAKE_C_COMPILER /usr/local/Cellar/llvm/9.0.1/bin/clang $CMAKE_C_COMPILER
-set CMAKE_CXX_COMPILER /usr/local/Cellar/llvm/9.0.1/bin/clang++ $CMAKE_CXX_COMPILER
-set OPENMP_LIBRARIES /usr/local/Cellar/llvm/9.0.1/lib $OPENMP_LIBRARIES
-set OPENMP_INCLUDES /usr/local/Cellar/llvm/9.0.1/include $OPENMP_INCLUDES
-set CC $CMAKE_C_COMPILER $CC
-set CXX $CMAKE_CXX_COMPILER $CXX
+# set CC /usr/local/Cellar/llvm/9.0.1/bin/clang $CC
+# set CXX /usr/local/Cellar/llvm/9.0.1/bin/clang++ $CXX
+# set OPENMP_LIBRARIES /usr/local/Cellar/llvm/9.0.1/lib $OPENMP_LIBRARIES
+# set OPENMP_INCLUDES /usr/local/Cellar/llvm/9.0.1/include $OPENMP_INCLUDES
+
+set CMAKE_C_COMPILER $CC $CMAKE_C_COMPILER
+set CMAKE_CXX_COMPILER $CXX $CMAKE_CXX_COMPILER
 
 # Houdini
 set HFS /Applications/Houdini/Houdini18.0.385/Frameworks/Houdini.framework/Versions/Current/Resources $HFS
