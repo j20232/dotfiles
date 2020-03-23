@@ -1,10 +1,5 @@
 # osx settings
 
-# C++
-if not test -e /usr/local/bin/gcc
-  ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
-  ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
-end
 
 # pyenv
 if test -e /usr/local/bin/pyenv  
@@ -34,6 +29,13 @@ set BOOST_ROOT /usr/local/Cellar/boost/1.72.0 $BOOST_ROOT
 set BOOST_INCLUDE $BOOST_ROOT/include $BOOST_INCLUDE
 set BOOST_INCLUDEDIR $BOOST_ROOT/include $BOOST_INCLUDEDIR
 set BOOST_LIBDIR $BOOST_ROOT/lib $BOOST_LIBDIR
+
+
+# gcc
+if not test -e /usr/local/bin/gcc
+  ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
+  ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
+end
 
 # llvm
 set CMAKE_C_COMPILER /usr/local/Cellar/llvm/9.0.1/bin/clang $CMAKE_C_COMPILER
