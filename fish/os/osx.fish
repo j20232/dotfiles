@@ -8,6 +8,7 @@ end
 
 # vcpkg
 export VCPKG_ROOT=$HOME/sdk/vcpkg
+export CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 alias vcpkg="$VCPKG_ROOT/vcpkg"
 
 
