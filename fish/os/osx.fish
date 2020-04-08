@@ -7,7 +7,7 @@ if test -e /usr/local/bin/pyenv
 end
 
 # vcpkg
-set VCPKG_ROOT $HOME/sdk/vcpkg $VCPKG_ROOT
+export VCPKG_ROOT=$HOME/sdk/vcpkg
 alias vcpkg="$VCPKG_ROOT/vcpkg"
 
 
