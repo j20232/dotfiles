@@ -6,11 +6,13 @@ if test -e /usr/local/bin/pyenv
   eval (pyenv init - | source)
 end
 
+# sdk
+set SDK_DIR $HOME/sdk $SDK_DIR
+
 # vcpkg
 export VCPKG_ROOT=$HOME/sdk/vcpkg
 export CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 alias vcpkg="$VCPKG_ROOT/vcpkg"
-
 
 # vulkan
 set VULKAN_SDK $HOME/sdk/vulkansdk/macOS $VULKAN_SDK
