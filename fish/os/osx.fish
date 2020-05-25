@@ -53,7 +53,9 @@ set CMAKE_CXX_COMPILER $CXX $CMAKE_CXX_COMPILER
 
 # Blender
 set BLENDER_PATH /Applications/Blender.app $BLENDER_PATH
-alias bpython="$BLENDER_PATH/Contents/Resources/2.83/python/bin/python3.7m"
+set BLENDER_BIN $BLENDER_PATH/Contents/Resources/2.83/python/bin $BLENDER_BIN
+alias bpython="$BLENDER_BIN/python3.7m"
+alias bpip="$BLENDER_BIN/pip"
 
 # Houdini
 set HFS /Applications/Houdini/Houdini18.0.385/Frameworks/Houdini.framework/Versions/Current/Resources $HFS
