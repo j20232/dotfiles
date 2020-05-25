@@ -33,7 +33,6 @@ set BOOST_INCLUDE $BOOST_ROOT/include $BOOST_INCLUDE
 set BOOST_INCLUDEDIR $BOOST_ROOT/include $BOOST_INCLUDEDIR
 set BOOST_LIBDIR $BOOST_ROOT/lib $BOOST_LIBDIR
 
-
 # gcc
 if not test -e /usr/local/bin/gcc
   ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
@@ -51,6 +50,10 @@ set CXX /usr/local/bin/g++-9 $CXX
 
 set CMAKE_C_COMPILER $CC $CMAKE_C_COMPILER
 set CMAKE_CXX_COMPILER $CXX $CMAKE_CXX_COMPILER
+
+# Blender
+set BLENDER_PATH /Applications/Blender.app $BLENDER_PATH
+alias bpython="$BLENDER_PATH/Contents/Resources/2.83/python/bin/python3.7m"
 
 # Houdini
 set HFS /Applications/Houdini/Houdini18.0.385/Frameworks/Houdini.framework/Versions/Current/Resources $HFS
