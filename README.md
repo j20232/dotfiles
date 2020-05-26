@@ -53,6 +53,7 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
  $ git config --global color.branch auto
  $ git config --global core.precomposeunicode true
  $ git config --global core.quotepath false
+ $ git config --global core.autocrlf false
  $ git config --list
 ```
 
