@@ -1,4 +1,4 @@
-init:
+init2:
 	@bash init/sh/bash_init.sh
 	@fish init/sh/fish_init.sh
 	@fish init/python/init.sh

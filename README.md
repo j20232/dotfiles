@@ -3,7 +3,7 @@
 ## Ubuntu 🏮
 
 ```
-sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
+sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && cd dotfiles && make init2 && exit
 ```
 
 
@@ -13,10 +13,16 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
 
 ---
 
+## Windows 🚗
+
+```
+$ make init2
+```  
+
 ## OSX 🍎
 
 ```
-git clone https://github.com/j20232/dotfiles && cd dotfiles && make init && exit
+git clone https://github.com/j20232/dotfiles && cd dotfiles && make init2 && exit
 ```
 
 - Touch Bar: [TouchSwitcher](https://hazeover.com/touchswitcher.html)
