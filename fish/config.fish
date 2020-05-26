@@ -27,8 +27,8 @@ switch (uname)
     source $HOME/dotfiles/fish/os/ubuntu.fish
   end
 
-if test -e $XDG_CONFIG_HOME/local.fish
-  source $XDG_CONFIG_HOME/local.fish
+ if test -e $HOME/.config/local.fish
+   source $XDG_CONFIG_HOME/local.fish
 end
 
 if not test -e $HOME/.tmux.conf
