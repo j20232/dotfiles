@@ -20,10 +20,8 @@ if not test -d $XDG_CONFIG_HOME
   set PATH /usr/local/bin $PATH
 end
 
-if not test -d $PYENV_ROOT
-  set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
-  set PATH $PYENV_ROOT/bin $PATH
-end
+set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
+set PATH $PYENV_ROOT/bin $PATH
 
 
 switch (uname)

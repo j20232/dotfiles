@@ -6,7 +6,10 @@ yes | sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 yes | sudo apt install neovim
 
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+if not test -d $HOME/.pyenv
+  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+end
+
 source $XDG_CONFIG_HOME/fish/config.fish
 pyenv install anaconda3-2019.03
 pyenv global anaconda3-2019.03
