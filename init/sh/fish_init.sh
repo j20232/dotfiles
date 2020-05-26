@@ -2,7 +2,11 @@ echo "Setting up PATH..."
 set XDG_CONFIG_HOME $HOME/.config $XDG_CONFIG_HOME
 set XDG_CACHE_HOME $HOME/.cache $XDG_CACHE_HOME
 set XDG_DATA_HOME $HOME/.local/share $XDG_DATA_HOME
-ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
+
+if not test -L $XDG_CONFIG_HOME/fish/config.fish
+  ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
+end
+
 source $XDG_CONFIG_HOME/fish/config.fish
 
 curl -Lo $XDG_CONFIG_HOME/fish/functions/fisher.fish --create-dirs https://git.io/fisher

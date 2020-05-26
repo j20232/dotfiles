@@ -9,7 +9,7 @@ echo "Installing minimum packages..."
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y tmux htop tree wget curl cmake gcc g++ build-essential ca-certificates software-properties-common unzip
 
-if [! -d $HOME/.tmux/plugins/tpm]; then
+if [ ! -d $HOME/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 fi
 
