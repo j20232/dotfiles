@@ -13,12 +13,10 @@ alias gpom="git push origin master"
 alias G="git log --oneline --graph --no-merges | head"
 alias :q="exit"
 
-if not test -d $XDG_CONFIG_HOME
-  set XDG_CONFIG_HOME $HOME/.config $XDG_CONFIG_HOME
-  set XDG_CACHE_HOME $HOME/.cache $XDG_CACHE_HOME
-  set XDG_DATA_HOME $HOME/.local/share $XDG_DATA_HOME
-  set PATH /usr/local/bin $PATH
-end
+set XDG_CONFIG_HOME $HOME/.config $XDG_CONFIG_HOME
+set XDG_CACHE_HOME $HOME/.cache $XDG_CACHE_HOME
+set XDG_DATA_HOME $HOME/.local/share $XDG_DATA_HOME
+set PATH /usr/local/bin $PATH
 
 set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
