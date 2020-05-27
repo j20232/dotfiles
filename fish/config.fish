@@ -27,6 +27,7 @@ switch (uname)
     source $HOME/dotfiles/fish/os/osx.fish
   case Linux
     source $HOME/dotfiles/fish/os/ubuntu.fish
+    set LS_COLORS $LS_COLORS: 'ow=1;32:'; export LS_COLORS
   end
 
  if test -e $HOME/.config/local.fish
