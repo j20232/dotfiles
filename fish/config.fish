@@ -2,6 +2,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias ju="jupyter notebook"
 
+
 function cd
   builtin cd $argv
     ls -a
@@ -27,7 +28,7 @@ switch (uname)
     source $HOME/dotfiles/fish/os/osx.fish
   case Linux
     source $HOME/dotfiles/fish/os/ubuntu.fish
-    set LS_COLORS $LS_COLORS: 'ow=1;32:'; export LS_COLORS
+    set LS_COLORS $LS_COLORS:'ow=1;34:' ; export LS_COLORS
   end
 
  if test -e $HOME/.config/local.fish
@@ -50,5 +51,4 @@ end
 if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
-
 
