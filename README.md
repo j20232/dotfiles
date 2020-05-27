@@ -15,8 +15,10 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
 
 ## Windows 🚗
 
+### WSL
 ```
 $ make init2
+$ make windows
 ```  
 
 ## OSX 🍎

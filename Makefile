@@ -39,3 +39,7 @@ gui:
 ssh:
 	@fish init/etc/ssh.sh 
 
+
+# windows
+windows:
+	@fish init/windows/sym.sh
