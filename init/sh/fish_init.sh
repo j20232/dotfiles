@@ -13,7 +13,7 @@ if not test -d $XDG_DATA_HOME
 end
 
 if not test -L $HOME/.config/fish/config.fish
-  ln -s $HOME/dotfiles/fish/config.fish $XDG_CONFIG_HOME/fish/
+  ln -s $HOME/dotfiles/fish/config.fish $HOME/.config/fish/
 end
 
 # source $XDG_CONFIG_HOME/fish/config.fish
