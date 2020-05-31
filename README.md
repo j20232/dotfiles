@@ -21,6 +21,27 @@ $ make init2
 $ make windows
 ```  
 
+### PowerShell
+
+#### scoop
+
+```sh
+$ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+$  iwr -useb get.scoop.sh | iex
+```
+
+#### Chocolatey
+
+https://chocolatey.org/install#installing-chocolatey
+
+#### vcpkg
+
+```
+$ git clone git@github.com:microsoft/vcpkg.git
+$ cd vcpkg
+$ .\bootstrap-vcpkg.bat
+```
+
 ## OSX 🍎
 
 ```
