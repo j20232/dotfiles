@@ -27,3 +27,12 @@ git clone https://github.com/junegunn/fzf.git ~/.fzf
 yes | ~/.fzf/install
 fisher add jethrokuan/fzf
 fisher add edc/bass
+
+# gibo
+git clone git@github.com:simonwhitaker/gibo.git ~/gibo
+cd $HOME/gibo
+chmod +x ~/gibo
+set PATH $HOME/gibo $PATH
+gibo update
+
+

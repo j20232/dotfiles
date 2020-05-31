@@ -21,6 +21,7 @@ set PATH /usr/local/bin $PATH
 
 set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
 set PATH $PYENV_ROOT/bin $PATH
+set PATH $HOME/gibo $PATH
 
 
 switch (uname)
