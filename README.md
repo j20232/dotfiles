@@ -30,6 +30,8 @@ $ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 $  iwr -useb get.scoop.sh | iex
 ```
 
+Ref: https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8
+
 #### Chocolatey
 
 https://chocolatey.org/install#installing-chocolatey
