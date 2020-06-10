@@ -28,8 +28,7 @@ $ make windows
 ```sh
 $ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 $  iwr -useb get.scoop.sh | iex
-$ scoop install vim
-$ scoop install gibo
+$ scoop install vim gibo which
 $ vim $PROFILE
 ```
 
