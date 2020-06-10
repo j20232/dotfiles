@@ -28,6 +28,14 @@ $ make windows
 ```sh
 $ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 $  iwr -useb get.scoop.sh | iex
+$ scoop install vim
+$ scoop install gibo
+$ vim $PROFILE
+```
+
+Add following statements to `$PROFILE`
+```sh
+$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 ```
 
 Ref: https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8
