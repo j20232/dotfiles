@@ -17,3 +17,5 @@ pacman --needed -Suy mingw-w64-x86_64-pkg-config mingw-w64-x86_64-unibilium gper
 pacman --needed -Suy msys/automake-wrapper
 pacman --needed -Suy mingw64/mingw-w64-x86_64-glfw
 pacman --needed -Suy mingw64/mingw-w64-x86_64-glew
+pacman -S mingw64/mingw-w64-x86_64-freeglut
+pacman -S mingw64/mingw-w64-x86_64-glm
