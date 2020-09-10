@@ -14,3 +14,4 @@ pacman --needed -Suy mingw-w64-x86_64-clang
 pacman --needed -Suy tmux tree unzip fish msys/gcc
 pacman --needed -Suy mingw-w64-x86_64-gcc mingw-w64-x86_64-libtool mingw-w64-x86_64-cmake mingw-w64-x86_64-make
 pacman --needed -Suy mingw-w64-x86_64-pkg-config mingw-w64-x86_64-unibilium gperf
+pacman --needed -Suy msys/automake-wrapper

@@ -105,8 +105,6 @@ Don't run on `msys2`
 
 - `make cpp`
 
----
-
 ## Others 🎚
 
 - GUI: `make gui`
