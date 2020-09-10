@@ -1,5 +1,7 @@
-alias vi="nvim"
-alias vim="nvim"
+if type -q nvim
+  alias vi="nvim"
+  alias vim="nvim"
+end
 alias ju="jupyter notebook"
 
 
