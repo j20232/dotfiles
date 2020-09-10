@@ -94,6 +94,8 @@ git clone https://github.com/j20232/dotfiles && cd dotfiles && make init2 && exi
 
 ## Python 🐍
 
+Don't run on `msys2`
+
 - all: `make py`
 - only table: `make table`
 - only NN: `make nn`

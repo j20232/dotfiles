@@ -13,9 +13,9 @@ cudnn:
 # Python
 py:
 	@fish init/pip/default.sh
-	@fish init/pip/table.sh
-	@fish init/pip/nn.sh
-	@fish init/pip/optional.sh
+	# @fish init/pip/table.sh
+	# @fish init/pip/nn.sh
+	# @fish init/pip/optional.sh
 
 table:
 	@fish init/pip/default.sh
