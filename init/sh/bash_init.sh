@@ -8,6 +8,10 @@ case ${OSTYPE} in
         echo "Running on OSX"
         source ./init/sh/bash_darwin.sh
         ;;
+    msys*)
+        echo "Running on msys"
+        source ./init/sh/bash_msys.sh
+        ;;
     linux*)
         if   [ -e /etc/debian_version ] ||
                  [ -e /etc/debian_release ]; then
