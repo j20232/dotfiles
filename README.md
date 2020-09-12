@@ -22,8 +22,8 @@ sudo apt install git make -y && git clone https://github.com/j20232/dotfiles && 
 
 ```sh
 $ pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
-$ pacman -Su
-$ pacman --needed -Sy base-devel msys0-devel git make
+$ pacman -Suy
+$ pacman --needed -Syy base-devel msys2-devel git make
 ```
 
 3. Generate a ssh key and register it at your GitHub account.
