@@ -105,7 +105,7 @@ Don't run on `msys2`
 
 - `make cpp`
 
-You may need to install [glbinding](git clone git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
+You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
 
 ## Others 🎚
 
