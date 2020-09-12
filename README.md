@@ -112,8 +112,23 @@ Don't run on `msys2`
 - Install [Visual Studio](https://visualstudio.microsoft.com/ja/vs/)
 
 #### clang
-- Install [ninja](https://github.com/ninja-build/ninja)
+- Install [ninja](https://github.com/ninja-build/ninja) and set the Path
+ - e.g. `export PATH=$PATH:/c` @ `$HOME/.bashrc`
 - You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
+- If you use vscode, you have to the following settings @ `./vscode/settings.json` in your project 
+
+```json
+"terminal.integrated.shell.windows": "C:/msys64/usr/bin/bash.exe",
+"terminal.integrated.env.windows": {
+  "MSYS2_PATH_TYPE": "inherit",
+  "MSYSTEM": "MINGW64",
+  "CHERE_INVOKING": "1"
+},
+"terminal.integrated.shellArgs.windows": [
+  "--login"
+],
+"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+```
 
 ## Others 🎚
 
