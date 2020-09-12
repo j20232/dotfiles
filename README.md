@@ -113,7 +113,14 @@ Don't run on `msys2`
 
 #### clang
 - Install [ninja](https://github.com/ninja-build/ninja) and set the Path
- - e.g. `export PATH=$PATH:/c` @ `$HOME/.bashrc`
+
+@ `$HOME/.bashrc`
+```sh
+export PATH=$PATH:/c
+export CC=/mingw64/bin/clang
+export CXX=/mingw64/bin/clang++
+```
+
 - You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
 - If you use vscode, you have to the following settings @ `./vscode/settings.json` in your project 
 
