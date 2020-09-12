@@ -103,9 +103,17 @@ Don't run on `msys2`
 
 ## C++ 🐶
 
+### Ubuntu/OSX
 - `make cpp`
 
-You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
+### Windows
+
+#### MSVC
+- Install [Visual Studio](https://visualstudio.microsoft.com/ja/vs/)
+
+#### clang
+- Install [ninja](https://github.com/ninja-build/ninja)
+- You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you develop GL-based applications.
 
 ## Others 🎚
 
@@ -115,8 +123,8 @@ You may need to install [glbinding](git@github.com:hpicgs/glbinding.git) if you 
 ## git 🐙
 
 ```fish
- $ git config --global user.name "First-name Family-name"
- $ git config --global user.email "hoge@example.com"
+ $ git config --global user.name mocobt
+ $ git config --global user.email mocobt@gmail.com
  $ git config --global core.editor 'vim -c'
  $ git config --global color.diff auto
  $ git config --global color.status auto
