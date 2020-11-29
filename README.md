@@ -156,3 +156,10 @@ export CXX=/mingw64/bin/clang++
  $ git config --global core.autocrlf input
  $ git config --list
 ```
+
+`$HOME/.gitconfig`に以下を追加
+
+```
+[alias]
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
+```
