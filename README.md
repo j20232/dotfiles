@@ -157,7 +157,7 @@ export CXX=/mingw64/bin/clang++
  $ git config --list
 ```
 
-`$HOME/.gitconfig`に以下を追加
+Add the following lines at `$HOME/.gitconfig` (on Windows PowerShell).
 
 ```
 [alias]
