@@ -182,3 +182,10 @@ export CXX=/mingw64/bin/clang++
  $ git config --global core.autocrlf input
  $ git config --list
 ```
+
+Add the following lines at `$HOME/.gitconfig` (on Windows PowerShell).
+
+```
+[alias]
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
+```
