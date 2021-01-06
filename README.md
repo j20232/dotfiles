@@ -63,6 +63,7 @@ $ make init2
 ```
 set PROG_PATH "/c/Users/****/AppData/Local/Programs" $PROG_PATH
 set PYTHONPATH "$PROG_PATH/Python/****/Lib/site-packages" $PYTHONPATH
+set PATH "$PYTHONPATH/../.." $PATH
 set PATH "$PYTHONPATH/../../Scripts" $PATH
 alias python="$PYTHONPATH/../../python.exe"
 alias pip="$PYTHONPATH/../../Scripts/pip.exe"

@@ -21,17 +21,19 @@ set XDG_CACHE_HOME $HOME/.cache $XDG_CACHE_HOME
 set XDG_DATA_HOME $HOME/.local/share $XDG_DATA_HOME
 set PATH /usr/local/bin $PATH
 
-set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
-set PATH $PYENV_ROOT/bin $PATH
 set PATH $HOME/gibo $PATH
 
 
 switch (uname)
   case Darwin
     source $HOME/dotfiles/fish/os/osx.fish
+    set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
+    set PATH $PYENV_ROOT/bin $PATH
   case Linux
     source $HOME/dotfiles/fish/os/ubuntu.fish
+    set PYENV_ROOT $HOME/.pyenv $PYENV_ROOT
     set LS_COLORS $LS_COLORS:'ow=1;34:' ; export LS_COLORS
+    set PATH $PYENV_ROOT/bin $PATH
   case "*"
     set os_name (uname)
     if string match -q MINGW64_NT (string split - (uname))
