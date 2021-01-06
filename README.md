@@ -26,20 +26,46 @@ $ pacman -Suy
 $ pacman --needed -Syy base-devel msys2-devel git make
 ```
 
-3. Generate a ssh key and register it at your GitHub account.
+4. Generate a ssh key and register it at your GitHub account.
 
-4. Clone this repository
+5. Clone this repository
 
 ```sh
 $ cd
 $ git clone git@github.com:j20232/dotfiles.git
 ```
 
-5. Run `make` at this repository
+6. Change `msys64/msys2_shell.cmd` as follows
+
+from
+
+```
+rem set MSYS=winsymlinks:nativestrict
+rem set MSYS2_PATH_TYPE=inherit
+```
+
+To
+
+```
+set MSYS=winsymlinks:nativestrict
+set MSYS2_PATH_TYPE=inherit
+```
+
+7. Run following lines after launching `msys64/msys2_shell.cmd` with Administrator mode
 
 ```sh
 $ cd $HOME/dotfiles
-$ make
+$ make init2
+```
+
+8. Add following lines to `$XDG_CONFIG_HOME/local.fish`
+
+```
+set PROG_PATH "/c/Users/****/AppData/Local/Programs" $PROG_PATH
+set PYTHONPATH "$PROG_PATH/Python/****/Lib/site-packages" $PYTHONPATH
+set PATH "$PYTHONPATH/../../Scripts" $PATH
+alias python="$PYTHONPATH/../../python.exe"
+alias pip="$PYTHONPATH/../../Scripts/pip.exe"
 ```
 
 ### WSL
