@@ -62,3 +62,4 @@ if not test -d $HOME/.config/nvim
   ln -s $HOME/dotfiles/nvim/ $XDG_CONFIG_HOME/
 end
 
+set -U fish_user_paths (echo $fish_user_paths | tr ' ' '\n' | sort -u)
