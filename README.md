@@ -66,8 +66,6 @@ set PYTHONROOT "PROG_PATH/Python/****" $PYTHONROOT
 set PYTHONPATH "$$PYTHONROOT/Lib/site-packages" $PYTHONPATH
 set PATH "$PYTHONROOT" $PATH
 set PATH "$PYTHONROOT/Scripts" $PATH
-alias python="$PYTHONROOT/python.exe"
-alias pip="$PYTHONROOT/Scripts/pip.exe"
 ```
 9. Add local `$HOME/.bashrc`
 
