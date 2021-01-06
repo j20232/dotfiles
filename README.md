@@ -60,13 +60,23 @@ $ make init2
 
 8. Add following lines to `$XDG_CONFIG_HOME/local.fish`
 
-```
+```sh
 set PROG_PATH "/c/Users/****/AppData/Local/Programs" $PROG_PATH
-set PYTHONPATH "$PROG_PATH/Python/****/Lib/site-packages" $PYTHONPATH
-set PATH "$PYTHONPATH/../.." $PATH
-set PATH "$PYTHONPATH/../../Scripts" $PATH
-alias python="$PYTHONPATH/../../python.exe"
-alias pip="$PYTHONPATH/../../Scripts/pip.exe"
+set PYTHONROOT "PROG_PATH/Python/****" $PYTHONROOT
+set PYTHONPATH "$$PYTHONROOT/Lib/site-packages" $PYTHONPATH
+set PATH "$PYTHONROOT" $PATH
+set PATH "$PYTHONROOT/Scripts" $PATH
+alias python="$PYTHONROOT/python.exe"
+alias pip="$PYTHONROOT/Scripts/pip.exe"
+```
+9. Add local `$HOME/.bashrc`
+
+```sh
+export PROG_PATH=/c/Users/****/AppData/Local/Programs
+export PYTHONROOT=$PROG_PATH/Python/****
+export PYTHONPATH=$PYTHONPATH:$PYTHONROOT/Lib/site-packages
+export PATH=$PATH:$PYTHONROOT
+export PATH=$PATH:$PYTHONROOT/Scripts
 ```
 
 ### WSL
