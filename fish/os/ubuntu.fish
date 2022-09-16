@@ -6,5 +6,5 @@ set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
 # pyenv
 if test -e $HOME/.pyenv/bin/pyenv
-  eval (pyenv init - | source)
+  pyenv init - | source
 end
