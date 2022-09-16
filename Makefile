@@ -37,7 +37,7 @@ gui:
 	@fish init/gui/init.sh
 
 ssh:
-	@fish init/etc/ssh.sh 
+	@fish init/sh/ssh.sh 
 
 
 # windows
