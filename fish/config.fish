@@ -10,9 +10,6 @@ function cd
     ls -a
 end
 
-alias gcm="git commit -m"
-alias gb="git branch"
-alias gpom="git push origin master"
 alias G="git log --oneline --graph --no-merges | head"
 alias :q="exit"
 
