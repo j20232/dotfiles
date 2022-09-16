@@ -34,10 +34,11 @@ set BOOST_INCLUDEDIR $BOOST_ROOT/include $BOOST_INCLUDEDIR
 set BOOST_LIBDIR $BOOST_ROOT/lib $BOOST_LIBDIR
 
 # gcc
-if not test -e /usr/local/bin/gcc
-  ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
-  ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
-end
+# temporal
+# if not test -e /usr/local/bin/gcc
+#   ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
+#   ln -s /usr/local/bin/g++-9 /usr/local/bin/g++
+# end
 
 set CC /usr/local/bin/gcc-9 $CC
 set CXX /usr/local/bin/g++-9 $CXX
